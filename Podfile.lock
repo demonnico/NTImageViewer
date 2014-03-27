@@ -1,0 +1,19 @@
+PODS:
+  - SDWebImage (3.6):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.6)
+  - UIViewUtils (0.0.1)
+
+DEPENDENCIES:
+  - SDWebImage (~> 3.6)
+  - UIViewUtils (from `git@github.com:demon1105/UIView-Utils.git`)
+
+EXTERNAL SOURCES:
+  UIViewUtils:
+    :git: git@github.com:demon1105/UIView-Utils.git
+
+SPEC CHECKSUMS:
+  SDWebImage: 7eb273e54ca8a2e506ad9bd5e80c35b2a4d7c95e
+  UIViewUtils: 79a9f1dc6a48202ccffa2cea7045dbbbbd0fd4fa
+
+COCOAPODS: 0.29.0
