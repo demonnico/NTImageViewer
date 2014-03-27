@@ -10,7 +10,7 @@
 #import <UIView+Utils.h>
 #import <UIImageView+WebCache.h>
 
-#define  ImageViewTag 1234567
+#define TargetImageViewTag 1234567
 #define DeviceScreenWidth   [UIScreen mainScreen].bounds.size.width
 #define DeviceScreenHeight  [UIScreen mainScreen].bounds.size.height
 
@@ -127,7 +127,7 @@ static NTImageViewer * _instance;
                                    originalSize.width,
                                    originalSize.height);
     UIImageView * imageView = [UIImageView new];
-    imageView.tag  = ImageViewTag;
+    imageView.tag  = TargetImageViewTag;
     imageView.origin = originalPoint;
     imageView.size = originalSize;
     imageView.image =  imageViewPlaceHolder.image;
@@ -172,14 +172,14 @@ static NTImageViewer * _instance;
         if (scrollView.contentOffset.y+scrollView.height-contentHeight<0) {
             return NO;
         }
-        UIImageView * imageView = (UIImageView*)[scrollView viewWithTag:ImageViewTag];
+        UIImageView * imageView = (UIImageView*)[scrollView viewWithTag:TargetImageViewTag];
         self.panBeginTop = imageView.top;
         return YES;
     }else{//向下拉
         if (scrollView.contentOffset.y>0) {
             return NO;
         }
-        UIImageView * imageView = (UIImageView*)[scrollView viewWithTag:ImageViewTag];
+        UIImageView * imageView = (UIImageView*)[scrollView viewWithTag:TargetImageViewTag];
         self.panBeginTop = imageView.top;
         return YES;
     }
@@ -192,7 +192,7 @@ static NTImageViewer * _instance;
 
 -(UIView*)viewForZoomingInScrollView:(UIScrollView *)scrollView
 {
-    return [scrollView viewWithTag:ImageViewTag];
+    return [scrollView viewWithTag:TargetImageViewTag];
 }
 
 #define MAX_DISTANCE 500.0
@@ -200,7 +200,7 @@ static NTImageViewer * _instance;
 {
     UIWindow * displayWindow = self.displayWindow;
     UIScrollView * scrollView = self.scrollView;
-    UIImageView * imageView = (UIImageView*)[scrollView viewWithTag:ImageViewTag];
+    UIImageView * imageView = (UIImageView*)[scrollView viewWithTag:TargetImageViewTag];
     CGPoint point = [panGesture translationInView:scrollView];
     CGPoint velocity = [panGesture velocityInView:scrollView];
     CGFloat percent = abs(point.y)/MAX_DISTANCE;
@@ -233,7 +233,7 @@ static NTImageViewer * _instance;
     __weak __typeof(&*self)weakSelf = self;
     UIWindow * displayWindow = self.displayWindow;
     UIScrollView * scrollView = (UIScrollView*)view;
-    UIImageView * imageView  = (UIImageView*)[scrollView viewWithTag:ImageViewTag];
+    UIImageView * imageView  = (UIImageView*)[scrollView viewWithTag:TargetImageViewTag];
     [scrollView setZoomScale:1 animated:YES];
     if(imageView.height<DeviceScreenHeight*2)
         [scrollView setContentOffset:CGPointZero animated:YES];
