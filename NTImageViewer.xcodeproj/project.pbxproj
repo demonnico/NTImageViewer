@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64B7D0D918E449E70071E1E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B7D0D818E449E70071E1E3 /* Foundation.framework */; };
+		64B7D0DB18E449E70071E1E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B7D0DA18E449E70071E1E3 /* CoreGraphics.framework */; };
+		64B7D0DD18E449E70071E1E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B7D0DC18E449E70071E1E3 /* UIKit.framework */; };
+		64B7D0E318E449E70071E1E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64B7D0E118E449E70071E1E3 /* InfoPlist.strings */; };
+		64B7D0E518E449E70071E1E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B7D0E418E449E70071E1E3 /* main.m */; };
+		64B7D0E918E449E70071E1E3 /* NTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B7D0E818E449E70071E1E3 /* NTAppDelegate.m */; };
+		64B7D0EB18E449E70071E1E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B7D0EA18E449E70071E1E3 /* Images.xcassets */; };
+		64B7D0F218E449E70071E1E3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B7D0F118E449E70071E1E3 /* XCTest.framework */; };
+		64B7D0F318E449E70071E1E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B7D0D818E449E70071E1E3 /* Foundation.framework */; };
+		64B7D0F418E449E70071E1E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B7D0DC18E449E70071E1E3 /* UIKit.framework */; };
+		64B7D0FC18E449E70071E1E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64B7D0FA18E449E70071E1E3 /* InfoPlist.strings */; };
+		64B7D0FE18E449E70071E1E3 /* NTImageViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B7D0FD18E449E70071E1E3 /* NTImageViewerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64B7D0F518E449E70071E1E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64B7D0CD18E449E70071E1E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64B7D0D418E449E70071E1E3;
+			remoteInfo = NTImageViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64B7D0D518E449E70071E1E3 /* NTImageViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTImageViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64B7D0D818E449E70071E1E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		64B7D0DA18E449E70071E1E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		64B7D0DC18E449E70071E1E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		64B7D0E018E449E70071E1E3 /* NTImageViewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NTImageViewer-Info.plist"; sourceTree = "<group>"; };
+		64B7D0E218E449E70071E1E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		64B7D0E418E449E70071E1E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		64B7D0E618E449E70071E1E3 /* NTImageViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NTImageViewer-Prefix.pch"; sourceTree = "<group>"; };
+		64B7D0E718E449E70071E1E3 /* NTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTAppDelegate.h; sourceTree = "<group>"; };
+		64B7D0E818E449E70071E1E3 /* NTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTAppDelegate.m; sourceTree = "<group>"; };
+		64B7D0EA18E449E70071E1E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		64B7D0F018E449E70071E1E3 /* NTImageViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NTImageViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64B7D0F118E449E70071E1E3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		64B7D0F918E449E70071E1E3 /* NTImageViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NTImageViewerTests-Info.plist"; sourceTree = "<group>"; };
+		64B7D0FB18E449E70071E1E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		64B7D0FD18E449E70071E1E3 /* NTImageViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTImageViewerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64B7D0D218E449E70071E1E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B7D0DB18E449E70071E1E3 /* CoreGraphics.framework in Frameworks */,
+				64B7D0DD18E449E70071E1E3 /* UIKit.framework in Frameworks */,
+				64B7D0D918E449E70071E1E3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64B7D0ED18E449E70071E1E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B7D0F218E449E70071E1E3 /* XCTest.framework in Frameworks */,
+				64B7D0F418E449E70071E1E3 /* UIKit.framework in Frameworks */,
+				64B7D0F318E449E70071E1E3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64B7D0CC18E449E70071E1E3 = {
+			isa = PBXGroup;
+			children = (
+				64B7D0DE18E449E70071E1E3 /* NTImageViewer */,
+				64B7D0F718E449E70071E1E3 /* NTImageViewerTests */,
+				64B7D0D718E449E70071E1E3 /* Frameworks */,
+				64B7D0D618E449E70071E1E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64B7D0D618E449E70071E1E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64B7D0D518E449E70071E1E3 /* NTImageViewer.app */,
+				64B7D0F018E449E70071E1E3 /* NTImageViewerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64B7D0D718E449E70071E1E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64B7D0D818E449E70071E1E3 /* Foundation.framework */,
+				64B7D0DA18E449E70071E1E3 /* CoreGraphics.framework */,
+				64B7D0DC18E449E70071E1E3 /* UIKit.framework */,
+				64B7D0F118E449E70071E1E3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64B7D0DE18E449E70071E1E3 /* NTImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+				64B7D0E718E449E70071E1E3 /* NTAppDelegate.h */,
+				64B7D0E818E449E70071E1E3 /* NTAppDelegate.m */,
+				64B7D0EA18E449E70071E1E3 /* Images.xcassets */,
+				64B7D0DF18E449E70071E1E3 /* Supporting Files */,
+			);
+			path = NTImageViewer;
+			sourceTree = "<group>";
+		};
+		64B7D0DF18E449E70071E1E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64B7D0E018E449E70071E1E3 /* NTImageViewer-Info.plist */,
+				64B7D0E118E449E70071E1E3 /* InfoPlist.strings */,
+				64B7D0E418E449E70071E1E3 /* main.m */,
+				64B7D0E618E449E70071E1E3 /* NTImageViewer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64B7D0F718E449E70071E1E3 /* NTImageViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				64B7D0FD18E449E70071E1E3 /* NTImageViewerTests.m */,
+				64B7D0F818E449E70071E1E3 /* Supporting Files */,
+			);
+			path = NTImageViewerTests;
+			sourceTree = "<group>";
+		};
+		64B7D0F818E449E70071E1E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64B7D0F918E449E70071E1E3 /* NTImageViewerTests-Info.plist */,
+				64B7D0FA18E449E70071E1E3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64B7D0D418E449E70071E1E3 /* NTImageViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64B7D10118E449E70071E1E3 /* Build configuration list for PBXNativeTarget "NTImageViewer" */;
+			buildPhases = (
+				64B7D0D118E449E70071E1E3 /* Sources */,
+				64B7D0D218E449E70071E1E3 /* Frameworks */,
+				64B7D0D318E449E70071E1E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NTImageViewer;
+			productName = NTImageViewer;
+			productReference = 64B7D0D518E449E70071E1E3 /* NTImageViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64B7D0EF18E449E70071E1E3 /* NTImageViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64B7D10418E449E70071E1E3 /* Build configuration list for PBXNativeTarget "NTImageViewerTests" */;
+			buildPhases = (
+				64B7D0EC18E449E70071E1E3 /* Sources */,
+				64B7D0ED18E449E70071E1E3 /* Frameworks */,
+				64B7D0EE18E449E70071E1E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64B7D0F618E449E70071E1E3 /* PBXTargetDependency */,
+			);
+			name = NTImageViewerTests;
+			productName = NTImageViewerTests;
+			productReference = 64B7D0F018E449E70071E1E3 /* NTImageViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64B7D0CD18E449E70071E1E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Nicholas Tau";
+				TargetAttributes = {
+					64B7D0EF18E449E70071E1E3 = {
+						TestTargetID = 64B7D0D418E449E70071E1E3;
+					};
+				};
+			};
+			buildConfigurationList = 64B7D0D018E449E70071E1E3 /* Build configuration list for PBXProject "NTImageViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 64B7D0CC18E449E70071E1E3;
+			productRefGroup = 64B7D0D618E449E70071E1E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64B7D0D418E449E70071E1E3 /* NTImageViewer */,
+				64B7D0EF18E449E70071E1E3 /* NTImageViewerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64B7D0D318E449E70071E1E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B7D0E318E449E70071E1E3 /* InfoPlist.strings in Resources */,
+				64B7D0EB18E449E70071E1E3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64B7D0EE18E449E70071E1E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B7D0FC18E449E70071E1E3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64B7D0D118E449E70071E1E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B7D0E918E449E70071E1E3 /* NTAppDelegate.m in Sources */,
+				64B7D0E518E449E70071E1E3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64B7D0EC18E449E70071E1E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B7D0FE18E449E70071E1E3 /* NTImageViewerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64B7D0F618E449E70071E1E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64B7D0D418E449E70071E1E3 /* NTImageViewer */;
+			targetProxy = 64B7D0F518E449E70071E1E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64B7D0E118E449E70071E1E3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64B7D0E218E449E70071E1E3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		64B7D0FA18E449E70071E1E3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64B7D0FB18E449E70071E1E3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64B7D0FF18E449E70071E1E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		64B7D10018E449E70071E1E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64B7D10218E449E70071E1E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NTImageViewer/NTImageViewer-Prefix.pch";
+				INFOPLIST_FILE = "NTImageViewer/NTImageViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		64B7D10318E449E70071E1E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NTImageViewer/NTImageViewer-Prefix.pch";
+				INFOPLIST_FILE = "NTImageViewer/NTImageViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		64B7D10518E449E70071E1E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NTImageViewer.app/NTImageViewer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NTImageViewer/NTImageViewer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NTImageViewerTests/NTImageViewerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		64B7D10618E449E70071E1E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NTImageViewer.app/NTImageViewer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NTImageViewer/NTImageViewer-Prefix.pch";
+				INFOPLIST_FILE = "NTImageViewerTests/NTImageViewerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64B7D0D018E449E70071E1E3 /* Build configuration list for PBXProject "NTImageViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64B7D0FF18E449E70071E1E3 /* Debug */,
+				64B7D10018E449E70071E1E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64B7D10118E449E70071E1E3 /* Build configuration list for PBXNativeTarget "NTImageViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64B7D10218E449E70071E1E3 /* Debug */,
+				64B7D10318E449E70071E1E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		64B7D10418E449E70071E1E3 /* Build configuration list for PBXNativeTarget "NTImageViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64B7D10518E449E70071E1E3 /* Debug */,
+				64B7D10618E449E70071E1E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64B7D0CD18E449E70071E1E3 /* Project object */;
+}
