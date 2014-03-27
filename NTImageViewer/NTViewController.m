@@ -28,6 +28,23 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIImageView  * imageView =
+    [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"test.jpg"]];
+    imageView.frame =CGRectMake(10, 10, 300, 300);
+    imageView.userInteractionEnabled = YES;
+    [self.view addSubview:imageView];
+    
+    UITapGestureRecognizer * tapGesture =
+    [[UITapGestureRecognizer alloc] initWithTarget:self
+                                            action:@selector(imageTapped:)];
+    [imageView addGestureRecognizer:tapGesture];
+}
+
+-(void)imageTapped:(UITapGestureRecognizer*)gesture
+{
+    UIImageView * imageView = (UIImageView*)gesture.view;
+    [[NTImageViewer sharedInstance] displayWithPlaceHolderImageView:imageView];
 }
 
 - (void)didReceiveMemoryWarning
