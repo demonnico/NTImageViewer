@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :git: git@github.com:demon1105/UIView-Utils.git
 
 SPEC CHECKSUMS:
-  SDWebImage: 7eb273e54ca8a2e506ad9bd5e80c35b2a4d7c95e
+  SDWebImage: c6989652c1cdf27cbdf3f56957e2030f825af5bc
   UIViewUtils: 79a9f1dc6a48202ccffa2cea7045dbbbbd0fd4fa
 
-COCOAPODS: 0.29.0
+COCOAPODS: 0.34.2
