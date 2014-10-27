@@ -83,7 +83,7 @@ static NTImageViewer * _instance;
 -(void)displayDetailImageWithURLString:(NSString*)URL
                   placeHolderImageView:(UIImageView*)imageViewPlaceHolder
                           progressView:(UIView*)progressView
-                         progressBlock:(progressBlock)progressblock
+                         progressBlock:(downloadingBlock)progressblock
                       cachedImageBlock:(cachedImageBlock)cachedimageblock
                              endBlock:(viewExitBlock)endBlock
 {

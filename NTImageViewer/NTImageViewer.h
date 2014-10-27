@@ -10,7 +10,7 @@
 
 typedef void (^viewExitBlock)(CGFloat exitPointAlpha);
 typedef UIImage* (^cachedImageBlock)(NSString* ImageURLString);
-typedef void (^progressBlock)(CGFloat progress,BOOL finished,UIImage * image);
+typedef void (^downloadingBlock)(CGFloat progress,BOOL finished,UIImage * image);
 @interface NTImageViewer : NSObject
 <UIScrollViewDelegate,UIGestureRecognizerDelegate>
 
@@ -35,7 +35,7 @@ typedef void (^progressBlock)(CGFloat progress,BOOL finished,UIImage * image);
 -(void)displayDetailImageWithURLString:(NSString*)URL
                   placeHolderImageView:(UIImageView*)imageViewPlaceHolder
                           progressView:(UIView*)progressView
-                         progressBlock:(progressBlock)progressblock
+                         progressBlock:(downloadingBlock)progressblock
                       cachedImageBlock:(cachedImageBlock)cachedimageblock
                               endBlock:(viewExitBlock)endBlock;
 
