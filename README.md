@@ -11,7 +11,7 @@ Make it easier to display image, just looks like the style of Facebook's App.
 add demo to use method
 
 `
--(void)displayDetailImageWithURLString:(NSString*)URL !@#$
+-(void)displayDetailImageWithURLString:(NSString*)URL
 `
 
 
