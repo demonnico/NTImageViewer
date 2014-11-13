@@ -134,10 +134,10 @@ static NTImageViewer * _instance;
     [scrollView addSubview:imageView];
     
     NSString * detailImageURL = URL;
-    UIImage * cachedImage  =  nil;
-    if(URL)
-        cachedImage = cachedimageblock(URL);
-    if (progressView&&!cachedImage)
+    if (cachedimageblock) {
+        cachedimageblock(imageView);
+    }
+    if (progressView)
         [imageView addSubview:progressView];
     
     UIImage * imagePlaceHolder = imageViewPlaceHolder.image;
@@ -234,6 +234,8 @@ static NTImageViewer * _instance;
     UIWindow * displayWindow = self.displayWindow;
     UIScrollView * scrollView = (UIScrollView*)view;
     UIImageView * imageView  = (UIImageView*)[scrollView viewWithTag:TargetImageViewTag];
+    UIImageView * imageViewPlaceHolder = self.imageViewPlaceHolder;
+    imageView.image = imageViewPlaceHolder.image;
     [scrollView setZoomScale:1 animated:YES];
     if(imageView.height<DeviceScreenHeight*2)
         [scrollView setContentOffset:CGPointZero animated:YES];
@@ -243,8 +245,7 @@ static NTImageViewer * _instance;
                          displayWindow.backgroundColor =
                          [UIColor colorWithHue:0 saturation:0 brightness:0 alpha:0];
                      } completion:^(BOOL finished) {
-                         UIImageView * imageViewPlaceHolder =
-                         [NTImageViewer sharedInstance].imageViewPlaceHolder;
+                         
                          imageViewPlaceHolder.alpha = scrollView.alpha;
                          [UIView animateWithDuration:0.3
                                           animations:^{

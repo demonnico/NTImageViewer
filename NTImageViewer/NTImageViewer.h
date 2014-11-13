@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 typedef void (^viewExitBlock)(CGFloat exitPointAlpha);
-typedef UIImage* (^cachedImageBlock)(NSString* ImageURLString);
+typedef void (^cachedImageBlock)(UIImageView * previewImageView);
 typedef void (^downloadingBlock)(CGFloat progress,BOOL finished,UIImage * image);
 @interface NTImageViewer : NSObject
 <UIScrollViewDelegate,UIGestureRecognizerDelegate>
